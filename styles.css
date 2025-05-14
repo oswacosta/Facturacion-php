@@ -1,0 +1,151 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del fondo de la página principal */
+.main-body {
+    background-color: #b3d9ff; /* Azul claro de fondo */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para la cabecera */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #80bfff; /* Azul más claro */
+    padding: 15px;
+    color: white;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Usuario en la cabecera */
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+/* Menú de navegación */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #99ccff; /* Azul claro */
+    padding: 10px;
+}
+
+.menu button {
+    background-color: #66b3ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.menu button:hover {
+    background-color: #3399ff;
+}
+
+/* Contenido principal */
+main {
+    flex-grow: 1;
+    background: url('images/fondoprincipal.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Superposición para mejorar la legibilidad del texto */
+.background-overlay {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con transparencia */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+/* Bienvenida */
+.welcome-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+/* Descripción */
+.company-description {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+/* ------------------------------ */
+/* 📌 ESTILOS PARA LOGIN (index.html) */
+/* ------------------------------ */
+body.login-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("images/loging.jpg") no-repeat center center/cover;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

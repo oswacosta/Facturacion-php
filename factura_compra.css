@@ -1,0 +1,148 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo de la página de factura de compra */
+.factura-compra-body {
+    display: flex;
+    background-color: #e6f2ff; /* Azul claro */
+    min-height: 100vh;  /* Asegúrate de que el contenedor ocupe toda la altura de la ventana */
+}
+
+/* Sidebar (Menú lateral) */
+.sidebar {
+    width: 220px;
+    background-color: #b3d9ff;
+    height: 100vh;  /* Mantiene la barra lateral a la altura completa de la ventana */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar li {
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.sidebar li.active {
+    background-color: #80bfff;
+    font-weight: bold;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: #004aad;
+}
+
+.logout {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Contenido principal */
+.content {
+    flex-grow: 1;
+    padding: 20px;  /* Asegúrate de que haya algo de relleno para que el contenido no se quede oculto */
+    background-color: #fff; /* Añade un fondo para asegurarte de que el contenido no esté invisibilizado */
+}
+
+/* Barra superior */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #99ccff;
+    padding: 15px;
+    color: white;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/* Estilos de inputs y selects */
+input, select, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+input[type="date"], input[type="text"] {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+/* Botones */
+.btn, .btn.primary {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: #66b3ff;
+}
+
+/* Tabla de productos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #cce5ff;
+    color: #004aad;
+}
+
+button[type="button"] {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #e60000;
+}

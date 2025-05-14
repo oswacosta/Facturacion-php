@@ -1,0 +1,157 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo de la página de pedidos */
+.pedidos-body {
+    display: flex;
+    background-color: #f2f9ff; /* Azul muy claro */
+}
+
+/* Sidebar (Menú lateral) */
+.sidebar {
+    width: 220px;
+    background-color: #b3d9ff; /* Azul más claro */
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar li {
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.sidebar li.active {
+    background-color: #80bfff; /* Azul más claro para la sección activa */
+    font-weight: bold;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: #004aad;
+}
+
+/* Botón de cerrar sesión */
+.logout {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Contenido principal */
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Barra superior */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #99ccff; /* Azul claro */
+    padding: 15px;
+    color: white;
+}
+
+/* Botones */
+.btn {
+    background-color: #66b3ff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn.primary {
+    background-color: #004aad;
+}
+
+/* Filtros y búsqueda */
+.filter, input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Usuario */
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Tabla de pedidos */
+.pedidos-table {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #cce5ff; /* Azul claro */
+    color: #004aad;
+}
+
+/* Botones de acciones */
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
