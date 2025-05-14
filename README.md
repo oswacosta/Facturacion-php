@@ -68,7 +68,7 @@ Inicia Apache y MySQL desde XAMPP.
 
 Abre en tu navegador: http://localhost/facturacion-php/src/
 
-👤 Autor
-Nombre: Oswaldo Acosta
+👤 Autores
+Nombre: Oswaldo Acosta, Ainhoa Rodríguez
 
 GitHub: @oswacosta
